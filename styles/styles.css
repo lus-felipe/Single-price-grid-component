@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
-/* 
-- Mobile: 375px
-- Desktop: 1440px */
-
 :root {
   /* PRIMARY */
   --cyan: hsl(179, 62%, 43%);
@@ -36,8 +32,6 @@ main {
   height: 100%;
   width: 100%;
 
-  /* height: inherit;
-  width: inherit; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +39,7 @@ main {
 }
 
 .component {
-  max-width: 38rem; /* 1440px (base 16px) */
+  max-width: 38rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -56,7 +50,7 @@ main {
   overflow: hidden;
 }
 
-/* Início classes auxiliares */
+/* Início das classes auxiliares */
 .padding {
   padding: 2.4rem 2rem;
 }
@@ -70,7 +64,7 @@ main {
   align-items: center;
 }
 
-/* Fim classes auxiliares */
+/* Fim das classes auxiliares */
 
 .component__subtitle {
   font-size: 1rem;
@@ -86,7 +80,7 @@ main {
   margin-bottom: 0.2rem;
 }
 
-/* Primeira sesão */
+/* Primeira sessão */
 .component__section-1 {
   grid-column: 1 / -1;
 
@@ -108,7 +102,7 @@ main {
   color: white;
 }
 
-/* Segunda sesão */
+/* Segunda sessão */
 .component__section-2 {
   position: relative;
   background-color: var(--cyan);
@@ -144,9 +138,6 @@ main {
 }
 
 .component__button:hover {
-  /* background-color: white;
-
-  color: var(--bright-yellow); */
   transform: scale(1.04);
   opacity: 0.8;
 }
@@ -157,7 +148,7 @@ main {
   color: var(--bright-yellow);
 }
 
-/* Terceira Sesão */
+/* Terceira sessão */
 .component__section-3 {
   background-color: hsla(179, 55%, 51%, 0.952);
 }
