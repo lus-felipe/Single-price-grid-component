@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+  /* PRIMARY */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  /* NEUTRAL */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--bright-yellow);
+}
+
+body {
+  font-family: Karla, sans-serif;
+
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-gray);
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+
+  /* height: inherit;
+  width: inherit; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  max-width: 38rem; /* 1440px (base 16px) */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, fit-content);
+
+  border-radius: 5px;
+  box-shadow: 0 0 13px var(--grayish-blue);
+  overflow: hidden;
+}
+
+/* Início classes auxiliares */
+.padding {
+  padding: 2.4rem 2rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Fim classes auxiliares */
+
+.component__subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+
+  margin-bottom: 0.9rem;
+}
+
+.component__text {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+
+  margin-bottom: 0.2rem;
+}
+
+/* Primeira sesão */
+.component__section-1 {
+  grid-column: 1 / -1;
+
+  background-color: white;
+}
+
+.component__title {
+  color: var(--cyan);
+  font-weight: bold;
+
+  margin-bottom: 3.5%;
+}
+
+.component__subtitle--yellow {
+  color: var(--bright-yellow);
+}
+
+.component__subtitle--yellow::selection {
+  color: white;
+}
+
+/* Segunda sesão */
+.component__section-2 {
+  position: relative;
+  background-color: var(--cyan);
+}
+
+.component__price {
+  font-size: 2rem;
+
+  margin-right: 4%;
+}
+
+.component__text--lighter {
+  opacity: 0.8;
+}
+
+.component__button {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2rem;
+  right: 2rem;
+
+  background-color: var(--bright-yellow);
+  padding: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px hsl(179, 62%, 36%);
+  transition: background-color 0.1s ease-in, color 0.1s ease-in,
+    transform 0.1s ease-in;
+}
+
+.component__button:hover {
+  /* background-color: white;
+
+  color: var(--bright-yellow); */
+  transform: scale(1.04);
+  opacity: 0.8;
+}
+
+.component__button:active {
+  background-color: white;
+
+  color: var(--bright-yellow);
+}
+
+/* Terceira Sesão */
+.component__section-3 {
+  background-color: hsla(179, 55%, 51%, 0.952);
+}
+
+.component__list {
+  list-style-type: none;
+  opacity: 0.9;
+
+  line-height: 1.3rem;
+}

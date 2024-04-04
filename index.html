@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 375px) and (orientation: portrait)"
+      href="styles/media-queries.css"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        /* display: none; */
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="component">
+        <section class="component__section-1 padding">
+          <h1 class="component__title">Join our community</h1>
+          <h2 class="component__subtitle component__subtitle--yellow">
+            30-day, hassle-free money back guarantee
+          </h2>
+          <p class="component__text">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </section>
+        <section class="component__section-2 padding text-white">
+          <h2 class="component__subtitle">Monthly Subscription</h2>
+          <p class="component__text flex">
+            <strong class="component__price">$29</strong>
+            <span class="component__text--lighter">per month</span>
+          </p>
+          <p class="component__text">Full access for less than $1 a day</p>
+          <a class="component__button" href="#">Sign Up</a>
+        </section>
+        <section class="component__section-3 padding text-white">
+          <h2 class="component__subtitle">Why Us</h2>
+          <ul class="component__list component__text">
+            <li class="component__item">Tutorials by industry experts</li>
+            <li class="component__item">Peer &amp; expert code review</li>
+            <li class="component__item">Coding exercises</li>
+            <li class="component__item">Access to our GitHub repos</li>
+            <li class="component__item">Community forum</li>
+            <li class="component__item">Flashcard decks</li>
+            <li class="component__item">New videos every week</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
