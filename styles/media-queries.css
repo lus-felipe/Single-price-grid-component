@@ -20,3 +20,12 @@ main {
 .component__text {
   line-height: 1.4rem;
 }
+
+.component__section-2 {
+  border-bottom-left-radius: 0;
+}
+
+.component__section-3 {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

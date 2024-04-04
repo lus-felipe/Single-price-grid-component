@@ -153,7 +153,6 @@ main {
 .component__section-3 {
   background-color: hsla(179, 55%, 51%, 0.952);
   border-bottom-right-radius: 5px;
-  overflow: hidden;
 }
 
 .component__list {
