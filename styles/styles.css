@@ -38,14 +38,14 @@ main {
 }
 
 .component {
-  max-width: 38rem;
+  max-width: 40rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, fit-content);
 
   border-radius: 5px;
-  box-shadow: 0 0 13px var(--grayish-blue);
+  box-shadow: 0 0 13px hsla(218, 22%, 67%, 30%);
 }
 
 /* Início das classes auxiliares */
@@ -68,7 +68,7 @@ main {
   font-size: 1rem;
   font-weight: bold;
 
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .component__text {
@@ -85,13 +85,15 @@ main {
   background-color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+
+  color: var(--grayish-blue);
 }
 
 .component__title {
   color: var(--cyan);
   font-weight: bold;
 
-  margin-bottom: 3.5%;
+  margin-bottom: 1.8rem;
 }
 
 .component__subtitle--yellow {
@@ -140,7 +142,10 @@ main {
 
 .component__button:hover {
   transform: scale(1.04);
-  opacity: 0.8;
+}
+
+.component__button:hover:not(:active) {
+  background-color: hsla(71, 73%, 54%, 0.795);
 }
 
 .component__button:active {
